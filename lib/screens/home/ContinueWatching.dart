@@ -3,20 +3,16 @@ import 'package:flutter/material.dart';
 class ContinueWatching extends StatelessWidget {
   final List<Map<String, String>> items = [
     {
-      'image': 'https://via.placeholder.com/150',
-      'title': 'Movie 1',
+      'title': 'The Simpsons',
+      'image':
+          'https://image.tmdb.org/t/p/w500/qcr9bBY6MVeLzriKCmJOv1562uY.jpg',
+      'path': 'the-simpsons'
     },
     {
-      'image': 'https://via.placeholder.com/150',
-      'title': 'Movie 2',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'title': 'Movie 3',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'title': 'Movie 4',
+      'title': 'Rick and Morty',
+      'image':
+          'https://image.tmdb.org/t/p/w500/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg',
+      'path': 'rick-and-morty'
     },
   ];
 
@@ -36,26 +32,32 @@ class ContinueWatching extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: items.length,
               itemBuilder: (context, index) {
-                return Container(
-                  width: 100,
-                  margin: EdgeInsets.only(right: 10.0),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(8),
-                    image: DecorationImage(
-                      image: NetworkImage(items[index]['image']!),
-                      fit: BoxFit.cover,
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(
+                        context, '/playbackcontrols/${items[index]['path']}');
+                  },
+                  child: Container(
+                    width: 100,
+                    margin: EdgeInsets.only(right: 10.0),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: NetworkImage(items[index]['image']!),
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      items[index]['title']!,
-                      style: TextStyle(
-                          color: Colors.white,
-                          backgroundColor: Colors.black54,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
+                    child: Center(
+                      child: Text(
+                        items[index]['title']!,
+                        style: TextStyle(
+                            color: Colors.white,
+                            backgroundColor: Colors.black54,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 );
