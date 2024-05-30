@@ -1,0 +1,25 @@
+# Dart package configuration files
+.pub-cache
+.packages
+
+# Build files
+build/
+linux/
+macos/
+windows/
+ios/
+android/
+flutter_assets/
+
+# Dart-specific files
+.dart_tool/
+.idea/
+.vscode/
+*.iml
+
+# Generated files
+*.lock
+*.log
+
+# Flutter/Dart related files
+pubspec.lock
