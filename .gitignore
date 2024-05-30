@@ -1,0 +1,49 @@
+# Flutter related
+.flutter/
+.dart_tool/
+.packages
+.pub/
+build/
+ios/Flutter/.last_build_id
+flutter_export_environment.sh
+
+# IntelliJ related
+.idea/
+*.iml
+
+# VS Code related
+.vscode/
+
+# Android related
+*.jks
+*/build/
+*/.cxx/
+local.properties
+android/key.properties
+android/app/key.properties
+
+# iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcodeproj/xcuserdata/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Miscellaneous
+*.log
+*.lock
+*.lock.lock
+.DS_Store
+*.swp
+*.swo
+*.swn
+
+# Specific files
+.env
+*.orig
