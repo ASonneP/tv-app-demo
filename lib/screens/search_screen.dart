@@ -77,33 +77,39 @@ class FilterChips extends StatelessWidget {
 
 final List<Map<String, String>> dummyData = [
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 1',
-    'description': 'Description for item 1',
+    'image': 'https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
+    'title': 'The Shawshank Redemption',
+    'description':
+        'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
   },
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 2',
-    'description': 'Description for item 2',
+    'image': 'https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg',
+    'title': 'The Godfather',
+    'description':
+        'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
   },
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 3',
-    'description': 'Description for item 3',
+    'image': 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
+    'title': 'The Dark Knight',
+    'description':
+        'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.',
   },
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 4',
-    'description': 'Description for item 4',
+    'image': 'https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg',
+    'title': 'Pulp Fiction',
+    'description':
+        'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
   },
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 5',
-    'description': 'Description for item 5',
+    'image': 'https://image.tmdb.org/t/p/w500/8kNruSfhk5IoE4eZOc4UpvDn6tq.jpg',
+    'title': 'Fight Club',
+    'description':
+        'An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.',
   },
   {
-    'image': 'https://via.placeholder.com/150',
-    'title': 'Item 6',
-    'description': 'Description for item 6',
+    'image': 'https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg',
+    'title': 'Forrest Gump',
+    'description':
+        'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.',
   },
 ];

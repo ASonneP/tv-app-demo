@@ -10,6 +10,7 @@ import 'screens/home/main.dart';
 import 'screens/notifications_screen.dart';
 import 'screens/search_screen.dart';
 import 'screens/user_profiles_screen.dart';
+import 'screens/playback_controls.dart';
 
 void main() {
   runApp(TVApp());
@@ -23,7 +24,7 @@ class TVApp extends StatelessWidget {
       child: Consumer<AppState>(
         builder: (context, appState, child) {
           return MaterialApp(
-            title: 'Demo TV App',
+            title: '📺 TV App Demo',
             theme: ThemeData.light(),
             darkTheme: ThemeData.dark(),
             themeMode: appState.isDarkMode ? ThemeMode.dark : ThemeMode.light,
@@ -39,6 +40,17 @@ class TVApp extends StatelessWidget {
               '/disney': (context) => DisneyScreen(),
               '/appletv': (context) => AppleTVScreen(),
               '/hbomax': (context) => HBOMaxScreen(),
+            },
+            onGenerateRoute: (settings) {
+              // Handle dynamic routes
+              if (settings.name!.startsWith('/playbackcontrols/')) {
+                final path = settings.name!.split('/').last;
+                return MaterialPageRoute(
+                  builder: (context) => PlaybackControls(path: path),
+                );
+              }
+              // If no match is found, return null to fall back to default behavior.
+              return null;
             },
           );
         },

@@ -17,15 +17,15 @@ class TopNavBar extends StatelessWidget {
                   Navigator.pushNamed(context, '/search');
                 },
               ),
-              SizedBox(width: 10),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/home');
-                },
-                child: Text('Main',
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              ),
+              // SizedBox(width: 10),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushNamed(context, '/home');
+              //   },
+              //   child: Text('Main',
+              //       style:
+              //           TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              // ),
               SizedBox(width: 20),
               GestureDetector(
                 onTap: () {

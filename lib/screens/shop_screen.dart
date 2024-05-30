@@ -61,34 +61,17 @@ class CategoryFilters extends StatelessWidget {
 class ProductGrid extends StatelessWidget {
   final List<Map<String, String>> products = [
     {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 1',
-      'price': '\$29.99',
+      'image':
+          'https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/6f7c6e55-4c53-4b23-a6ef-45bbb07c8d3c/TV_OLED77G4WUA_ACSI_gallery_01_3000x3000',
+      'name':
+          '77 inch Class LG OLED evo G4 4K Smart TV 2024 with Supplied Wall Mount',
+      'price': '\$4,499.99',
     },
     {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 2',
-      'price': '\$59.99',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 3',
-      'price': '\$19.99',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 4',
-      'price': '\$99.99',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 5',
-      'price': '\$49.99',
-    },
-    {
-      'image': 'https://via.placeholder.com/150',
-      'name': 'Product 6',
-      'price': '\$39.99',
+      'image':
+          'https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/e64bb88d-49a1-4f54-a9dc-de6dd1b33714/md08003935-DZ-07-jpg',
+      'name': 'LG OLED evo G3 77 inch Class 4K OLED TV 2023',
+      'price': '\$3,299.99',
     },
   ];
 
